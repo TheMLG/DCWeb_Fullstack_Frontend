@@ -1,0 +1,30 @@
+h2 {
+  color: var(--tc);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.underline {
+    border: solid 1px var(--tc);
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.revinfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1rem;
+    margin-bottom: 1rem;
+}
+.reviewarea{
+    /* width: 100%; */
+    height: 30vh;
+    margin: 1rem 1rem;
+    padding: 0px 1rem;
+    background-color: #d4d4d4;
+}
+.fomrheader{
+    margin-bottom: 0;
+}

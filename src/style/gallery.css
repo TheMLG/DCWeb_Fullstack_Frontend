@@ -1,0 +1,43 @@
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  max-height: 60vh;
+  /* justify-content: center; */
+  gap: 20px;
+  padding: 20px 0;
+  border : 1px solid #ddd;
+  /* border-radius: 10px; */
+  background-color: rgb(238, 238, 238);
+  overflow-x: scroll;
+  overflow-y: none;
+  /* scroll-behavior: smooth; */
+  scroll-snap-type: x;
+  -webkit-overflow-scrolling: touch;
+  /* position: relative; */
+}
+.card {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  background-color: rgb(255, 246, 83);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* flex-shrink: 0; */
+  /* margin: 0 10px; */
+}
+.cardimg {
+  width: 100%;
+  height: 283px; /* A5 aspect ratio height for 200px width */
+  background-image: url("../assetsdc-links-page.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cardinfo {
+  padding: 16px;
+}
