@@ -5,7 +5,7 @@ import "../style/reviewpage.css";
 const ReviewPage = () => {
   return (
     <>
-      <h2>Magazine Reviews & Suggestions</h2>
+      <h3>Magazine Reviews & Suggestions</h3>
       <div className="revinfo">
         <p>
           We value your feedback! Please share your review about our magazine
@@ -14,7 +14,7 @@ const ReviewPage = () => {
       </div>
 
       <div className="reviewarea">Here will be reviews shown</div>
-      <h2 className="fomrheader">Your Review/Suggestions</h2>
+      <h3 className="formheader">Your Review/Suggestions</h3>
       <ReviewForm />
     </>
   );

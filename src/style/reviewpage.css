@@ -1,30 +1,33 @@
-h2 {
+h3 {
+  font-size: 1.3rem;
   color: var(--tc);
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .underline {
-    border: solid 1px var(--tc);
-    width: 95%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+  border: solid 1px var(--tc);
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 .revinfo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 1rem;
-    margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 1rem;
+  margin-bottom: 1rem;
 }
-.reviewarea{
-    /* width: 100%; */
-    height: 30vh;
-    margin: 1rem 1rem;
-    padding: 0px 1rem;
-    background-color: #d4d4d4;
+.reviewarea {
+  /* width: 100%; */
+  height: 35vh;
+  margin: 1rem 1rem;
+  padding: 0px 1rem;
+  /* border: 2px solid #d4d4d4; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0000001a;
 }
-.fomrheader{
-    margin-bottom: 0;
+.formheader {
+  margin-top: 1.5rem;
 }
