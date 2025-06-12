@@ -6,11 +6,12 @@ import HomePage from "./pages/home.jsx";
 import Dashboard from "./adminpage/dashboard.jsx";
 import Login from "./adminpage/login.jsx";
 import ReviewPage from "./pages/reviewPage.jsx";
+import ContributePage from "./pages/contributePage.jsx";
+
 // import Magazine from "./pages/mag";
 // import Fund from "./pages/fund";
 // import Addvertisemnt from "./pages/add";
 // import Aboutus from "./pages/aboutus";
-// import Contribute from "./pages/contribute";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -38,13 +39,14 @@ function App() {
             }
           />
           <Route path="/review" element={<ReviewPage />} />
+          <Route path="/contribute" element={<ContributePage />} />
           {/* <Route path="/" element={<Home />} />
                  <Route path="/mag" element={<Magazine />} />
                  <Route path="/fund" element={<Fund />} />
                  <Route path="/add" element={<Addvertisemnt />} />
                  <Route path="/review" element={<Review />} />
                  <Route path="/aboutus" element={<Aboutus />} />
-                 <Route path="/contribute" element={<Contribute />} /> */}
+                  */}
         </Routes>
         <Footer />
       </Router>
