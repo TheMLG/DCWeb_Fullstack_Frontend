@@ -21,9 +21,14 @@ h3 {
 }
 .reviewarea {
   /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
   height: 35vh;
   margin: 1rem 1rem;
-  padding: 0px 1rem;
+  padding: 0.5rem 1rem;
   /* border: 2px solid #d4d4d4; */
   border-radius: 8px;
   box-shadow: 0 0 10px #0000001a;
@@ -31,3 +36,49 @@ h3 {
 .formheader {
   margin-top: 1.5rem;
 }
+
+
+
+
+.containerStyle {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.cardsContainerStyle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cardStyle {
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.ratingStyle {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+.commentStyle {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+}
+
+
