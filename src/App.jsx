@@ -7,6 +7,7 @@ import Dashboard from "./adminpage/dashboard.jsx";
 import Login from "./adminpage/login.jsx";
 import ReviewPage from "./pages/reviewPage.jsx";
 import ContributePage from "./pages/contributePage.jsx";
+import FundPage from "./pages/fundPage.jsx";
 
 // import Magazine from "./pages/mag";
 // import Fund from "./pages/fund";
@@ -40,9 +41,9 @@ function App() {
           />
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/contribute" element={<ContributePage />} />
+          <Route path="/fund" element={<FundPage />} />
           {/* <Route path="/" element={<Home />} />
                  <Route path="/mag" element={<Magazine />} />
-                 <Route path="/fund" element={<Fund />} />
                  <Route path="/add" element={<Addvertisemnt />} />
                  <Route path="/review" element={<Review />} />
                  <Route path="/aboutus" element={<Aboutus />} />

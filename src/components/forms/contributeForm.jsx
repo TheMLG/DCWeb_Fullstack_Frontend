@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import '../../style/contributeform.css'
+import Loader from "../loader.jsx";
+import "../../style/contributeform.css";
+
+
 const ContributeForm = () => {
   const {
     register,
@@ -40,14 +43,12 @@ const ContributeForm = () => {
     }
     try {
       console.log(data);
-      
-      const response = await fetch("/api/contribution",
-        {
-          method: "POST",
-          // headers: { "Content-Type": "application/json" },
-          body: formData,
-        }
-      );
+
+      const response = await fetch("/api/contribute", {
+        method: "POST",
+        // headers: { "Content-Type": "application/json" },
+        body: formData,
+      });
 
       let result = null;
       const contentType = response.headers.get("content-type");
@@ -161,8 +162,8 @@ const ContributeForm = () => {
             <input
               className="form-input"
               type="file"
-              accept=".txt, .jpg, .jpeg, .png" // Accept text and image files
-              multiple // Allow multiple file uploads
+              accept=".txt, .jpg, .jpeg, .png"
+              multiple
               {...register("files", {
                 required: "At least one file is required",
               })}
@@ -174,8 +175,10 @@ const ContributeForm = () => {
           {successMessage && <p className="success">{successMessage}</p>}
 
           <button className="form-button" type="submit" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit"}
+            Submit
           </button>
+          {isSubmitting && <Loader />}
+          {/* <Loader/> */}
         </form>
       </div>
     </>

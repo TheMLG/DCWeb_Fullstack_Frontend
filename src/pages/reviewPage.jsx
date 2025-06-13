@@ -26,8 +26,6 @@ const ReviewPage = () => {
     fetchReviews();
   }, []);
 
-  if (loading) return <p>Loading reviews...</p>;
-  if (error) return <p>Error: {error}</p>;
   return (
     <>
       <h3>Magazine Reviews & Suggestions</h3>
@@ -39,7 +37,11 @@ const ReviewPage = () => {
       </div>
 
       <div className="reviewarea">
-        {reviews.length === 0 ? (
+        {loading ? (
+          <p>Loading reviews...</p>
+        ) : error ? (
+          <p>Error: {error}</p>
+        ) : reviews.length === 0 ? (
           <p>No reviews submitted yet.</p>
         ) : (
           <div className="cardsContainerStyle">
@@ -50,21 +52,21 @@ const ReviewPage = () => {
               .map((review) => (
                 <div key={review._id} className="cardStyle">
                   <div className="headerStyle">
-                    <h4 style={{ margin: 0, color: "var(--tc)" }}>{review.name}</h4>
+                    <h4 style={{ margin: 0, color: "var(--tc)" }}>
+                      {review.name}
+                    </h4>
                     <div className="ratingStyle">
                       {Array.from({ length: review.rating }, (_, i) => (
-                        <span key={i}>&#9733;</span> // solid star
+                        <span key={i}>&#9733;</span>
                       ))}
                       {Array.from({ length: 5 - review.rating }, (_, i) => (
                         <span key={i} style={{ color: "#ccc" }}>
                           &#9733;
-                        </span> // empty star
+                        </span>
                       ))}
                     </div>
                   </div>
-          
                   <p className="commentStyle">{review.comment}</p>
-               
                 </div>
               ))}
           </div>
