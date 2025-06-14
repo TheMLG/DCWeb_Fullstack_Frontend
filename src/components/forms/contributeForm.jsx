@@ -162,10 +162,10 @@ const ContributeForm = () => {
             <input
               className="form-input"
               type="file"
-              accept=".txt, .jpg, .jpeg, .png"
+              accept=".txt, .jpg, .jpeg, .png, .pdf"
               multiple
               {...register("files", {
-                required: "At least one file is required",
+                required: false,
               })}
             />
             {errors.files && <p className="error">{errors.files.message}</p>}

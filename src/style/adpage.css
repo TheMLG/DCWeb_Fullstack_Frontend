@@ -1,0 +1,17 @@
+.submission-form-section {
+  margin: 1rem 0.7rem;
+}
+
+.submission-form-section h2 {
+  text-align: start;
+  /* margin-left: 0.5rem; */
+  margin-bottom: 1rem;
+  color: var(--do);
+}
+
+.fomrheader {
+  text-align: center;
+  margin: 1rem 0.7rem;
+  margin-bottom: 1rem;
+  color: var(--do);
+}

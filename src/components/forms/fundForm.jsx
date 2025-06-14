@@ -144,14 +144,8 @@ const FundForm = () => {
         {successMessage && <p className="success">{successMessage}</p>}
 
         <button className="form-button" type="submit" disabled={isSubmitting}>
-          {/* Submit */}
-        {/* <Loader/> */}
-        
              {isSubmitting ? <Loader/> : "Submit"}
-            
-
         </button>
-        {/* {isSubmitting && <Loader />} */}
       </form>
     </div>
   );
