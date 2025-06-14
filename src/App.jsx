@@ -9,8 +9,8 @@ import ReviewPage from "./pages/reviewPage.jsx";
 import ContributePage from "./pages/contributePage.jsx";
 import FundPage from "./pages/fundPage.jsx";
 import AdPage from "./pages/adPage.jsx";
-// import Magazine from "./pages/mag";
-// import Aboutus from "./pages/aboutus";
+import MagPage from "./pages/magazine.jsx";
+import AboutusPage from "./pages/aboutus.jsx";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,33 +25,27 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-          <Route
-            path="/admin"
-            element={
-              <>
-                {!isLoggedIn ? (
-                  <Login onLoginSuccess={handleLoginSuccess} />
-                ) : (
-                  <Dashboard />
-                )}
-              </>
-            }
-          />
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/contribute" element={<ContributePage />} />
           <Route path="/fund" element={<FundPage />} />
           <Route path="/add" element={<AdPage />} />
-          {/* <Route path="/" element={<Home />} />
-                 <Route path="/mag" element={<Magazine />} />
-                 <Route path="/add" element={<Addvertisemnt />} />
-                 <Route path="/review" element={<Review />} />
-                 <Route path="/aboutus" element={<Aboutus />} />
-                  */}
+          <Route path="/mag" element={<MagPage />} />
+          <Route path="/aboutus" element={<AboutusPage />} />
+          <Route path="/admin" element={<Dashboard />} />
         </Routes>
         <Footer />
       </Router>
     </>
   );
 }
+
+{
+  /* <> */
+}
+//   {!isLoggedIn ? (
+//     <Login onLoginSuccess={handleLoginSuccess} />
+//   ) : (
+//   )}
+// </>
 
 export default App;

@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f0f2f5; */
+}
+.magcard {
+  width: 90%;
+  max-width: 250px;
+  /* aspect-ratio: 1 / 1.414; A5 ratio */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.frontpage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.414; /* A5 ratio */
+  max-height: 400px;
+  /* background-image: url("../../public/assets/gallery/dc-v-fp.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.date {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.datas {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+  font-size: 1rem;
+  color: #555;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  font-size: 1.5rem;
+  color: white;
+  background: red;
+  border: none;
+  cursor: pointer;
+  padding: 0px 7px;
+  border-radius: 30px;
+}
+
+.pdfoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  border: none;
+  height: 100vh;
+  width: 90%;
+  justify-content: center;
+  background-color: black;
+}
+/* From Uiverse.io by SalladShooter */
+.like-wrapper {
+  --gap: 0.3em;
+  --radius: 0.35em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  /* background-color: orange; */
+  /* border: 0.1em solid #313131; */
+  padding: 0.5em;
+  /* border-radius: var(--radius); */
+  /* box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1); */
+  cursor: pointer;
+}
+
+.check[type="checkbox"] {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -0.25em;
+  margin-bottom: -0.25em;
+  height: 15px;
+  width: 60px;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.5em;
+  fill: #d4d4d4;
+  transition: opacity 0.3s ease-in-out;
+  height: 20px;
+}
+
+.icon.active {
+  display: none;
+  fill: #f58429;
+}
+
+.check[type="checkbox"]:checked + .container .icon.active {
+  display: inline-block;
+  /* animation: wiggle 0.5s ease-in-out; */
+}
+
+.check[type="checkbox"]:checked + .container .icon.inactive {
+  display: none;
+}
+
+.like-text {
+  /* margin-left: 0.5em; */
+  padding: 0.5em;
+  color: rgb(172, 110, 4);
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+
+
+.magazines {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sorter {
+  width: 20px;
+}
+
+.search-container {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  /* gap:5px; */
+  display: flex;
+  flex-direction: row;
+}
+
+#sorter {
+  width: 6rem;
+  padding: 9px 3px;
+  border-radius: 10px;
+  background-color: #fff0d3;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sortcontainer {
+  margin-right: 1rem;
+}
+
+.container-input {
+  position: relative;
+  width: 100%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
+ 

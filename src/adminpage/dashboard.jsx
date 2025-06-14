@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../style/dashboard.css";
 import Reviews from "./reviews.jsx";
-import Upload from "./uploader.jsx";
+import Uploader from "./uploader.jsx";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -23,17 +23,14 @@ class Dashboard extends Component {
   render() {
     return (
       <>
-        <div className="container">
-          <div className="sidebar">
+        <div className="dashboard-container">
+          <div className="db-navbar">
             <button onClick={this.handleReviewClick}>Reviews</button>
             <button onClick={this.handleUploadClick}>Upload Magazines</button>
           </div>
-          <div className="mainarea">
-            <div className="header">
-              <h1>Welcome Admin</h1>
-            </div>
+          <div className="db-mainarea">
             {this.state.showReviews && <Reviews />}
-            {this.state.showUpload && <Upload />}
+            {this.state.showUpload && <Uploader />}
           </div>
         </div>
       </>

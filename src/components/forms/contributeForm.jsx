@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import Loader from "../loader.jsx";
 import "../../style/contributeform.css";
 
-
 const ContributeForm = () => {
   const {
     register,
