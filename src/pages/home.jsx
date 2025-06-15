@@ -54,6 +54,21 @@ function Home() {
             </p>
           </article>
         </section>
+
+        <div className="magdiv">
+          <h2>Read Magazines</h2>
+          <p>
+           Read our magazines here
+          </p>
+          <button>Click here</button>
+        </div>
+
+        <div className="review">
+          <h2>rate us </h2>
+          <p>give yor reviews here </p>
+          <button>Click here</button>
+        </div>
+        
         <section className="gallery">
           <h2>Gallery</h2>
           {/* <div className="underline"></div> */}
