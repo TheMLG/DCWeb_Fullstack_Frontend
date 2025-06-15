@@ -14,7 +14,7 @@
   transition: background-color 0.3s ease;
 }
 .logo {
-  margin: 0px 8px 0px 0px;
+  margin: 0px -15px 0px 0px;
   height: 60px;
   width: 60px;
   background-image: url("/assets/navbar/dc-logo2.svg");
@@ -28,7 +28,7 @@
   width: auto;
   max-width: 250px;
   flex-grow: 1;
-  background-image: url("/assets/navbar/dc-title.svg");
+  background-image: url("/assets/navbar/dc-title2.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@
   }
   .navbar-title {
     height: 60px;
-    width: 70%;
+    width: 100%;
     background-size: contain;
     margin: 0;
   }

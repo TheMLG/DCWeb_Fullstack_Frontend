@@ -56,17 +56,17 @@ footer .contact-info p {
   gap: 0.5rem;
 }
 
-footer .icon {
+footer .fticon {
   font-size: 1.3rem;
-  color: #000000;
+  color: #00000049;
 }
 
-footer .whatsapp-link .icon {
-  color: #25D366; /* WhatsApp green */
+footer .whatsapp-link .fticon {
+  color: #25d365; 
 }
 
-footer .telegram-link .icon {
-  color: #0088cc; /* Telegram blue */
+footer .telegram-link .fticon {
+  color: #0088cc; 
 }
 
 @media (max-width: 600px) {

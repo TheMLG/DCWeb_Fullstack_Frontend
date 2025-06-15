@@ -23,7 +23,7 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
               className="whatsapp-link"
             >
-              <FaWhatsapp className="icon" /> Join our WhatsApp Group
+              <FaWhatsapp className="fticon" /> Join our WhatsApp Group
             </a>
             <a
               href="https://t.me/dashnamcircular"
@@ -31,7 +31,7 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
               className="telegram-link"
             >
-              <FaTelegram className="icon" /> Join our Telegram
+              <FaTelegram className="fticon" /> Join our Telegram
             </a>
             <a
               href="https://drive.google.com/drive/folders/10J5PZTcLXgiiFdmi0rd4kHr1LAyrdJeV?usp=sharing"
@@ -39,19 +39,19 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
               className="googledrive-link"
             >
-              <FaGoogleDrive className="icon" /> Google Drive
+              <FaGoogleDrive className="fticon" /> Google Drive
             </a>
           </div>
           <div className="contact-info">
             <p>Contact us:</p>
             <p>
-              <FaEnvelope className="icon" /> : dashnamcircular@gmail.com
+              <FaEnvelope className="fticon" /> : dashnamcircular@gmail.com
             </p>
             <p>
-              <FaPhone className="icon" /> : +91 9898550833
+              <FaPhone className="fticon" /> : +91 9898550833
             </p>
             <p>
-              <FaPhone className="icon" /> : +91 9724410375
+              <FaPhone className="fticon" /> : +91 9724410375
             </p>
           </div>
         </div>

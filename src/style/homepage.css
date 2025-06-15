@@ -40,6 +40,11 @@
   color: var(--tc);
 }
 
+.updatestxt {
+  font-size: 20px;
+  color: #b00000;
+}
+
 .intro-header {
   display: flex;
   justify-content: space-between;

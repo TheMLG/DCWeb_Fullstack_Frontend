@@ -50,8 +50,7 @@ function Home() {
           {/* <div className="underline"></div> */}
           <article>
             <p>
-              Our latest issue is now available online and in print. Check out
-              the exciting stories and features inside.
+             <marquee className="updatestxt">will be issued on 1st day of next month</marquee>
             </p>
           </article>
         </section>
