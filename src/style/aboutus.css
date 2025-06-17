@@ -1,0 +1,48 @@
+.auheader h2,
+.aheader h2,
+.photo-gallery h2,
+.mheader h2{
+  color: var(--tc);
+}
+
+.audiscription,
+.adiscription,
+.mdiscription{
+    margin-bottom: 0.5rem;
+}
+
+.aboutus,
+.photo-gallery,
+.ourm,
+.oura{
+    margin: 0px 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.ausubheader p,
+.asubheader p,
+.msubheader p{
+    text-align: start;
+    color: var(--tc);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* New styles for image container and images */
+.image-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.image {
+  width: 150px; /* fixed width */
+  aspect-ratio: 3 / 4; /* enforce 3:4 ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+

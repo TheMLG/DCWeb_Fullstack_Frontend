@@ -1,9 +1,14 @@
-.fundheader {
-  color: var(--tc);
-  margin: 1rem 1rem 1rem 1rem;
+.funddis{
+  margin: 0 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
-.fundcontent {
-  margin: 1rem 1rem 1rem 1rem;
+
+.funddis header{
+  font-size: 20px;
+  color: var(--tc);
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
 }
 .qr-container {
   display: flex;
@@ -14,7 +19,7 @@
   max-width: 400px;
   gap: 1rem;
 }
-
+.add-formhed
 .qr-image {
   width: 250px;
   height: 250px;
@@ -48,3 +53,17 @@
 .download-button:hover {
   background-color: var(--do);
 }
+
+.donate-now-button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  font-size: 16px;
+  background-color: var(--do);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+

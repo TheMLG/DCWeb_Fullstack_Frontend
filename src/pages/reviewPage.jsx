@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import ReviewForm from "../components/forms/reviewForm";
 import "../style/reviewpage.css";
+import LangToggle from "../components/LangToggle.jsx";
+import RevEng from "../components/BilangComponents/revieweng.jsx";
+import RevGuj from "../components/BilangComponents/reviewguj.jsx";
+
 const ReviewPage = () => {
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -28,14 +32,12 @@ const ReviewPage = () => {
 
   return (
     <>
-      <h3>Magazine Reviews & Suggestions</h3>
-      <div className="revinfo">
-        <p>
-          We value your feedback! Please share your review about our magazine
-          and any suggestions you have.
-        </p>
+      <div className="reviewdis">
+        <LangToggle ComponentA={RevGuj} ComponentB={RevEng}/>
       </div>
-
+      <div className="review-viewer">
+        <h3>Reviews From Our Users</h3>
+      </div>
       <div className="reviewarea">
         {loading ? (
           <p>Loading reviews...</p>

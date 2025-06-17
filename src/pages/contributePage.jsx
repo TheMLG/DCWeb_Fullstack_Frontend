@@ -1,18 +1,25 @@
-import React from 'react';
-import '../style/contributepage.css';
-import ContributeForm from '../components/forms/contributeForm';
+import React, { Component } from "react";
+import "../style/contributepage.css";
+import ContributeForm from "../components/forms/contributeForm";
+import LangToggle from "../components/LangToggle.jsx";
+import ContEng from "../components/BilangComponents/conteng.jsx";
+import ContGuj from "../components/BilangComponents/contguj.jsx";
 
-class ContributePage extends React.Component {
-    render() {
-        return (
-            <>
-                <section className="submission-form-section">
-                    <h2>Submit Your Article or Idea</h2>
-                </section>      
-                <ContributeForm/>
-            </>
-        );
-    }
+class ContributePage extends Component {
+  render() {
+    return (
+      <>
+        <div className="condis">
+          <LangToggle ComponentA={ContGuj} ComponentB={ContEng} />
+        </div>
+
+        <div className="contheader">
+          <h3>Contribution Form</h3>
+        </div>
+        <ContributeForm />
+      </>
+    );
+  }
 }
 
 export default ContributePage;

@@ -43,7 +43,7 @@ class Navbar extends React.Component {
             <a href="/add">Advertise</a>
           </li>
           <li>
-            <a href="/fund">Donate</a>
+            <a href="/fund">Support</a>
           </li>
           <li>
             <a href="/review">Review</a>

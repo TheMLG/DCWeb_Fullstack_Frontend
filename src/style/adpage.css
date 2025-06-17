@@ -1,17 +1,18 @@
-.submission-form-section {
-  margin: 1rem 0.7rem;
+.addis{
+  margin: 0 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.submission-form-section h2 {
-  text-align: start;
-  /* margin-left: 0.5rem; */
-  margin-bottom: 1rem;
-  color: var(--do);
+.addis header{
+  font-size: 20px;
+  color: var(--tc);
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
 }
-
-.fomrheader {
+.add-fomrheader {
   text-align: center;
-  margin: 1rem 0.7rem;
   margin-bottom: 1rem;
-  color: var(--do);
+  color: var(--tc);
+  font-size: 20px;
 }

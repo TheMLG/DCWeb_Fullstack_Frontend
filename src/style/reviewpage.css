@@ -1,26 +1,24 @@
-h3 {
-  font-size: 1.3rem;
+.review-viewer h3 {
+  font-size: 20px;
   color: var(--tc);
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 1rem;
 }
-.underline {
-  border: solid 1px var(--tc);
-  width: 95%;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+
+.reviewdis{
+  margin: 0 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
-.revinfo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 1rem;
-  margin-bottom: 1rem;
+
+.reviewdis header{
+  font-size: 20px;
+  color: var(--tc);
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
 }
+
 .reviewarea {
-  /* width: 100%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,17 +27,15 @@ h3 {
   height: 35vh;
   margin: 1rem 1rem;
   padding: 0.5rem 1rem;
-  /* border: 2px solid #d4d4d4; */
   border-radius: 8px;
   box-shadow: 0 0 10px #0000001a;
 }
 .formheader {
   margin-top: 1.5rem;
+  text-align: center;
+  color: var(--tc);
+  font-size: 20px;
 }
-
-
-
-
 .containerStyle {
     max-width: 900px;
     margin: 2rem auto;

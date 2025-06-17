@@ -1,21 +1,18 @@
 import React from "react";
 import "../style/adpage.css";
 import AdForm from "../components/forms/advertiseForm";
-
+import LangToggle from "../components/LangToggle.jsx"
+import AdEng from "../components/BilangComponents/adeng.jsx";
+import AdGuj from "../components/BilangComponents/adguj.jsx";
 class AdPage extends React.Component {
   render() {
     return (
       <>
-        <section className="submission-form-section">
-          <h2>Submit Your Advertisements</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-            sed, ullam asperiores impedit nemo iure libero ad saepe assumenda
-            fugiat.
-          </p>
-        </section>
-        <div className="fomrheader">
-            <h2>Advertisement Form</h2>
+       <div className="addis">
+        <LangToggle ComponentA={AdGuj} ComponentB={AdEng}/>
+       </div>
+        <div className="add-fomrheader">
+            <h3>Advertisement Form</h3>
         </div>
         <AdForm />
       </>
