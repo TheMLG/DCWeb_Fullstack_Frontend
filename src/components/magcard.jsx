@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+
+import React, { useEffect, useState, useRef } from "react";
 import "../style/magcard.css";
 
 function IframePdfReader({ url }) {
@@ -24,6 +25,7 @@ function Magcard() {
   });
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOption, setSortOption] = useState("newest");
+  const cardsRef = useRef([]);
 
   // Filter magData based on searchQuery (case-insensitive) and sort based on sortOption
   const filteredMagData = magData
@@ -96,6 +98,30 @@ function Magcard() {
     }
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => {
+      cardsRef.current.forEach((card) => {
+        if (card) observer.unobserve(card);
+      });
+    };
+  }, [filteredMagData]);
+
   return (
     <>
       <div className="search-container" style={{ marginBottom: "1rem" }}>
@@ -166,7 +192,11 @@ function Magcard() {
           </div>
         ) : (
           filteredMagData.map((magData, index) => (
-            <div className="magcard" key={index}>
+            <div
+              className="magcard"
+              key={index}
+              ref={(el) => (cardsRef.current[index] = el)}
+            >
               <section
                 onClick={() => handleCardClick(magData.pdfurl, magData._id)}
                 className="frontpage"
