@@ -5,6 +5,25 @@ class AuGuj extends Component {
   render() {
     return (
       <div className="au-main">
+        <div className="ltinfo">
+          <div className="ltname">
+            <div className="ltimg"></div>
+            <div>
+              <p className="lt-p1">Lalitpuri Rampuri Goswami</p>
+              <p className="lt-p2">Curator</p>
+            </div>
+          </div>
+
+          <p>
+            Dashnam Circular is curated by L. R. Goswami, a dedicated member of
+            the Dashnam community. With a deep passion for literature, culture,
+            and heritage, Shri L. R. Goswami works tirelessly to preserve and
+            promote the values and traditions of our community. Through
+            thoughtful selection of articles, stories, and messages, he ensures
+            that every issue of the magazine reflects the spirit and voice of
+            the community, inspiring readers across generations.
+          </p>
+        </div>
         <div className="aboutus">
           <div className="auheader">
             <h2> દશનામ સરક્યુલર ઈ-મેગેઝિન</h2>
@@ -24,7 +43,7 @@ class AuGuj extends Component {
           </div>
           <div>
             <p>
-              <b> &#8226; સમાચાર અને લેખો દ્વારા માહિતગાર કરવું —</b>  સમાજની નવી
+              <b> &#8226; સમાચાર અને લેખો દ્વારા માહિતગાર કરવું —</b> સમાજની નવી
               નવી જાણકારી સરળ ભાષામાં પહોંચાડવી.
             </p>
           </div>
@@ -36,8 +55,8 @@ class AuGuj extends Component {
           </div>
           <div>
             <p>
-              <b> &#8226; પ્રેરણાદાયી વાર્તાઓ —</b>આપણા લોકોએ જીતેલા સંઘર્ષ
-              અને સફળતાની કથાઓ તમે વાંચી ગર્વ અનુભવશો.
+              <b> &#8226; પ્રેરણાદાયી વાર્તાઓ —</b>આપણા લોકોએ જીતેલા સંઘર્ષ અને
+              સફળતાની કથાઓ તમે વાંચી ગર્વ અનુભવશો.
             </p>
           </div>
           <div>
@@ -177,15 +196,31 @@ class AuGuj extends Component {
             </p>
           </div>
         </div>
-        
+
         <div className="photo-gallery">
-            <h2>Awards</h2>
-            <div className="image-container">
-            <img className="image" src="/assets/gallery/achievemement2.jpg" alt="Award 2" />
-            <img className="image" src="/assets/gallery/achievemement3.jpg" alt="Award 3" />
-            <img className="image" src="/assets/gallery/achievemement2.jpg" alt="Award 2" />
-            <img className="image" src="/assets/gallery/achievemement3.jpg" alt="Award 3" />
-            </div>
+          <h2>Awards</h2>
+          <div className="image-container">
+            <img
+              className="image"
+              src="/assets/gallery/achievemement2.jpg"
+              alt="Award 2"
+            />
+            <img
+              className="image"
+              src="/assets/gallery/achievemement3.jpg"
+              alt="Award 3"
+            />
+            <img
+              className="image"
+              src="/assets/gallery/achievemement2.jpg"
+              alt="Award 2"
+            />
+            <img
+              className="image"
+              src="/assets/gallery/achievemement3.jpg"
+              alt="Award 3"
+            />
+          </div>
         </div>
       </div>
     );

@@ -5,6 +5,24 @@ class AuEng extends Component {
   render() {
     return (
       <div className="au-main">
+        <div className="ltinfo">
+          <div className="ltname">
+            <div className="ltimg"></div>
+            <div>
+              <p className="lt-p1">લલિતપુરી રામપુરી ગોસ્વામી</p>
+              <p className="lt-p2">તંત્રીશ્રી</p>
+            </div>
+          </div>
+
+          <p>
+            “દશનામ સર્ક્યુલર” ના તંત્રી શ્રી એલ. આર. ગોસ્વામી દશનામ સમાજના
+            સમર્પિત અને પ્રેરણાત્મક સભ્ય છે. સાહિત્ય, સંસ્કૃતિ અને વારસાં
+            પ્રત્યેની ઊંડી લાગણી સાથે તેઓ સમાજના મૂલ્યો અને પરંપરાનો જતન અને
+            પ્રચાર કરવા સતત પ્રયત્નશીલ છે. લેખો, વાર્તાઓ અને સંદેશાઓની
+            વિવેકપૂર્ણ પસંદગી દ્વારા તેઓ દરેક અંકમાં સમાજની ભાવનાઓને પ્રતિબિંબિત
+            કરે છે અને વાચકો ને પ્રેરણા આપે છે.
+          </p>
+        </div>
         <div className="aboutus">
           <div className="auheader">
             <h2>Dashnaam Circular E-Magazine</h2>
