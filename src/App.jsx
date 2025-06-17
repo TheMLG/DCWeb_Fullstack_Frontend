@@ -31,21 +31,23 @@ function App() {
           <Route path="/add" element={<AdPage />} />
           <Route path="/mag" element={<MagPage />} />
           <Route path="/aboutus" element={<AboutusPage />} />
-          <Route path="/admin" element={<Dashboard />} />
+          <Route
+            path="/admin"
+            element={
+              <>
+                {!isLoggedIn ? (
+                  <Login onLoginSuccess={handleLoginSuccess} />
+                ) : (
+                  <Dashboard />
+                )}
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </Router>
     </>
   );
 }
-
-{
-  /* <> */
-}
-//   {!isLoggedIn ? (
-//     <Login onLoginSuccess={handleLoginSuccess} />
-//   ) : (
-//   )}
-// </>
 
 export default App;
