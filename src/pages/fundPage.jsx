@@ -39,8 +39,8 @@ class FundPage extends Component {
             </a>
           </div>
         )}
-        <div className="funheader">
-          <h3>Funding Form</h3>
+        <div className="fundheader">
+          <h3>Your Information</h3>
         </div>
         <FundForm />
      

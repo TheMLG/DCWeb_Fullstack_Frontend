@@ -67,3 +67,8 @@
   transition: background-color 0.3s ease;
 }
 
+.fundheader h3{
+  font-size: 20px;
+  text-align: center;
+  color: var(--tc);
+}
