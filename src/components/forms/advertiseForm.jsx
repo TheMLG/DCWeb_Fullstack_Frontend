@@ -75,7 +75,7 @@ const AdForm = () => {
 
   return (
     <>
-      <div className="form-container">
+      <div className="add-form-container">
         <form
           className="form-body"
           onSubmit={handleSubmit(onSubmit)}

@@ -1,4 +1,4 @@
- .form-container {
+.cont-form-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-
 }
 
 .form-body input,
@@ -55,13 +54,9 @@
 .form-button:hover {
   background-color: rgb(177, 111, 5);
   color: white;
-} 
-
-
-
-
-
-
-
-
-
+}
+@media screen and (min-width: 600px) {
+  .cont-form-container {
+    margin: 0px 32rem;
+  }
+}

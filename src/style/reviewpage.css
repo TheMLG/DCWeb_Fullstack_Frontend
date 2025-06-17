@@ -77,4 +77,9 @@
     white-space: pre-wrap;
 }
 
+@media screen and (min-width: 600px) {
+  .reviewarea {
+    margin: 0px 10rem;
+  }
+}
 

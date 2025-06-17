@@ -76,7 +76,7 @@ const ContributeForm = () => {
 
   return (
     <>
-      <div className="form-container">
+      <div className="cont-form-container">
         <form
           className="form-body"
           onSubmit={handleSubmit(onSubmit)}

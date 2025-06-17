@@ -9,7 +9,7 @@ class Navbar extends React.Component {
           <div className="logo"></div>
         </a>
         <a href="/" className="navbar-title">
-          <div className="navbar-title"></div>
+          <div></div>
         </a>
           <input
             type="checkbox"

@@ -68,7 +68,7 @@ const ReviewForm = () => {
   };
 
   return (
-    <main>
+    <div className="rev-form-container">
       <section className="review-section">
       
 
@@ -157,7 +157,7 @@ const ReviewForm = () => {
           </button>
         </form>
       </section>
-    </main>
+    </div>
   );
 };
 

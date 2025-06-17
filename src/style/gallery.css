@@ -41,3 +41,11 @@
 .cardinfo {
   padding: 16px;
 }
+@media screen and (min-width: 600px) {
+ .gallery-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5rem;
+ }
+}

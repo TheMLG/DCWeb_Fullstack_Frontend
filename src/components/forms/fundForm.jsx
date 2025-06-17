@@ -67,7 +67,7 @@ const FundForm = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="fund-form-container">
       <form className="form-body" onSubmit={handleSubmit(onSubmit)} noValidate>
         <label htmlFor="name">
           Name:

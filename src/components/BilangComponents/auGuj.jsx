@@ -4,7 +4,7 @@ import "../../style/aboutus.css";
 class AuGuj extends Component {
   render() {
     return (
-      <>
+      <div className="au-main">
         <div className="aboutus">
           <div className="auheader">
             <h2> દશનામ સરક્યુલર ઈ-મેગેઝિન</h2>
@@ -187,7 +187,7 @@ class AuGuj extends Component {
             <img className="image" src="/assets/gallery/achievemement3.jpg" alt="Award 3" />
             </div>
         </div>
-      </>
+      </div>
     );
   }
 }

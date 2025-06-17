@@ -4,7 +4,7 @@ import "../../style/aboutus.css";
 class AuEng extends Component {
   render() {
     return (
-      <>
+      <div className="au-main">
         <div className="aboutus">
           <div className="auheader">
             <h2>Dashnaam Circular E-Magazine</h2>
@@ -201,7 +201,7 @@ class AuEng extends Component {
             />
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

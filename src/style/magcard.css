@@ -163,14 +163,22 @@ iframe {
   font-weight: bolder;
 }
 
-
-
 .magazines {
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .magazines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 16rem;
+    gap: 5rem;
+  }
 }
 
 #sorter {
