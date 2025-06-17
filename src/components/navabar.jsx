@@ -5,8 +5,12 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar">
-        <div className="logo"></div>
-        <div className="navbar-title"></div>
+        <a href="/" className="logo">
+          <div className="logo"></div>
+        </a>
+        <a href="/" className="navbar-title">
+          <div className="navbar-title"></div>
+        </a>
           <input
             type="checkbox"
             id="navbar-toggle"
