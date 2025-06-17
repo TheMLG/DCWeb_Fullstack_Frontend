@@ -1,35 +1,27 @@
 import React from "react";
-import '../style/navbar.css';
+import "../style/navbar.css";
 
 class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-    };
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
-
-  toggleMenu() {
-    this.setState((prevState) => ({
-      isOpen: !prevState.isOpen,
-    }));
-  }
-
   render() {
-    const { isOpen } = this.state;
     return (
       <nav className="navbar">
         <div className="logo"></div>
         <div className="navbar-title"></div>
-        <button
-          className="navbar-toggle"
-          aria-label="Toggle navigation"
-          onClick={this.toggleMenu}
-        >
-          &#9776;
-        </button>
-        <ul className={`navbar-menu${isOpen ? " active" : ""}`}>
+          <input
+            type="checkbox"
+            id="navbar-toggle"
+            className="navbar-toggle"
+            aria-label="Toggle navigation"
+          />
+          <label htmlFor="navbar-toggle" className="navbar-toggle-label">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </label>
+          {/* <div className="navtgl-btn">
+        </div> */}
+
+        <ul className="navbar-menu">
           <li>
             <a href="/">Home</a>
           </li>
