@@ -22,7 +22,7 @@ function Footer() {
 
     const fetchVisitorCount = async () => {
       try {
-        const response = await fetch(`/api/visitor-count`);
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/visitor-count`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

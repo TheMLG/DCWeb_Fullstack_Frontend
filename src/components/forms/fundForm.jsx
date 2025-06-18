@@ -38,7 +38,7 @@ const FundForm = () => {
     }
 
     try {
-      const response = await fetch("/api/fund", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/fund`, {
         method: "POST",
         body: formData,
       });

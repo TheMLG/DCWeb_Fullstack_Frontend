@@ -7,7 +7,7 @@ const GalleryDB = () => {
 
   const fetchImages = async () => {
     try {
-      const response = await fetch('/api/gallery/gallery');
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/gallery/gallery`);
       if (response.ok) {
         const data = await response.json();
         setImages(data);
@@ -23,7 +23,7 @@ const GalleryDB = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch('/api/gallery/gallery', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/gallery/gallery`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: data.url }),
@@ -44,7 +44,7 @@ const GalleryDB = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`/api/gallery/gallery/${id}`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/gallery/gallery/${id}`, {
         method: 'DELETE',
       });
       if (response.ok) {

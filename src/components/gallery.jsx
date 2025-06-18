@@ -8,7 +8,7 @@ function Gallery() {
 
   const fetchImages = async () => {
     try {
-      const response = await fetch('/api/gallery/gallery');
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/gallery/gallery`);
       if (response.ok) {
         const data = await response.json();
         setImages(data.map(img => img.url));

@@ -43,7 +43,7 @@ const ContributeForm = () => {
     try {
       console.log(data);
 
-      const response = await fetch("/api/contribute", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contribute`, {
         method: "POST",
         // headers: { "Content-Type": "application/json" },
         body: formData,

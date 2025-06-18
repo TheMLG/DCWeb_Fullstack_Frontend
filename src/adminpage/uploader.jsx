@@ -23,7 +23,7 @@ export default function Uploader() {
     console.log(data);
 
     try {
-      const response = await fetch(`/api/mag`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/mag`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

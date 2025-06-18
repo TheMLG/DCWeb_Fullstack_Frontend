@@ -50,7 +50,7 @@ function Magcard() {
   useEffect(() => {
     const fetchMag = async () => {
       try {
-        const response = await fetch(`/api/mag`);
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/mag`);
         if (!response.ok) {
           throw new Error("Failed to fetch magazine");
         }
@@ -67,7 +67,7 @@ function Magcard() {
   const handleCardClick = (url, id) => {
     setSelectedMagUrl(url);
 
-    fetch(`/api/mag/${id}/view`, { method: "POST" });
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/mag/${id}/view`, { method: "POST" });
   };
 
   useEffect(() => {
@@ -84,7 +84,7 @@ function Magcard() {
       // Already liked, do nothing
       return;
     }
-    const response = await fetch(`/api/mag/${id}/like`, {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/mag/${id}/like`, {
       method: "POST",
     });
     if (response.ok) {
