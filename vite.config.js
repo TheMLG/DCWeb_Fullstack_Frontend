@@ -7,8 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // change to your backend server
-        // target: 'https://z59g0pdh-3000.inc1.devtunnels.ms', // change to your backend server
+        target: process.env.VITE_BACKEND_URL || 'https://dcweb-fullstack-backend-4.onrender.com', // change to your backend server
         changeOrigin: true,
         secure: false,
       },
