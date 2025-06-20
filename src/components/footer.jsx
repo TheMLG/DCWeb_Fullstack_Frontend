@@ -77,6 +77,9 @@ function Footer() {
             <FaGoogleDrive className="fticon" /> Google Drive
           </a>
         </div>
+        <div className="nav-links">
+          <a href="/aboutus" className="aboutus-link">About Us</a>
+        </div>
         <div className="contact-info">
           <p>Contact us:</p>
           <p>
