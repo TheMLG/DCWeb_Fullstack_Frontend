@@ -11,7 +11,7 @@ const Login = ({ onLoginSuccess }) => {
 
   const onSubmit = (data) => {
     const { username, password } = data;
-    if (username === "admin" && password === "admin") {
+    if (username === "lalitpuri" && password === "LrgDc@1003") {
       setLoginError("");
       onLoginSuccess();
     } else {
