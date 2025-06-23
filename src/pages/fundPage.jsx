@@ -35,7 +35,7 @@ class FundPage extends Component {
               className="qr-image"
               width={250}
             />
-            <a href="/assets/gallery/qr.png" download="qr.png" className="download-button">
+            <a href="/assets/gallery/qrimg.jpg" download="qrimg.jpg" className="download-button">
               Download
             </a>
           </div>
