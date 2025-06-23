@@ -81,5 +81,8 @@
   .reviewarea {
     margin: 0px 10rem;
   }
+  .review-viewer h3{
+    margin-bottom: 1rem;
+  }
 }
 

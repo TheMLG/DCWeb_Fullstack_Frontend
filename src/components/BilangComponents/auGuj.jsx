@@ -201,12 +201,12 @@ class AuGuj extends Component {
           <div className="image-container">
             <img
               className="image"
-              src="/assets/gallery/achievemement2.jpg"
+              src="/assets/gallery/achievement1.jpg"
               alt="Award 2"
             />
             <img
               className="image"
-              src="/assets/gallery/achievemement3.jpg"
+              src="/assets/gallery/achievement2.jpg"
               alt="Award 3"
             />
             <img

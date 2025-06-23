@@ -30,9 +30,10 @@ class FundPage extends Component {
         {this.state.showQR && (
           <div className="qr-container">
             <img
-              src="/assets/gallery/qr.png"
+              src="/assets/gallery/qrimg.jpg"
               alt="QR Code"
               className="qr-image"
+              width={250}
             />
             <a href="/assets/gallery/qr.png" download="qr.png" className="download-button">
               Download

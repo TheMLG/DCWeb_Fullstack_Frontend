@@ -72,3 +72,9 @@
   text-align: center;
   color: var(--tc);
 }
+
+@media screen and (min-width: 600px) {
+  .fundheader h3{
+    margin-bottom: 1rem;
+  }
+}
