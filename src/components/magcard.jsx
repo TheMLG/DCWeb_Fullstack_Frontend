@@ -2,22 +2,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../style/magcard.css";
 
-function IframePdfReader({ url }) {
-  return (
-    <iframe
-      src={url}
-      title="PDF Reader"
-      width="100%"
-      height="600px"
-      style={{ border: "none" }}
-      aria-label="PDF Reader iframe"
-    />
-  );
-}
-
 function Magcard() {
   const [magData, setmagData] = useState([]);
-  const [selectedMagUrl, setSelectedMagUrl] = useState(null);
   const [likedMagIds, setLikedMagIds] = useState(() => {
     // Initialize from localStorage if available
     const saved = localStorage.getItem("likedMagIds");
@@ -63,10 +49,11 @@ function Magcard() {
 
     fetchMag();
   }, []);
-
   const handleCardClick = (url, id) => {
-    setSelectedMagUrl(url);
-
+    // Open magazine in new tab
+    window.open(url, '_blank');
+    
+    // Track the view
     fetch(`${import.meta.env.VITE_BACKEND_URL}/api/mag/${id}/view`, { method: "POST" });
   };
 
@@ -263,22 +250,9 @@ function Magcard() {
                   </div>
                 </div>
               </div>
-            </div>
-          ))
+            </div>          ))
         )}
       </div>
-      {selectedMagUrl && (
-        <div className="pdfoverlay">
-          <button
-            onClick={() => setSelectedMagUrl(null)}
-            className="close-btn"
-            aria-label="Close PDF viewer"
-          >
-            &times;
-          </button>
-          <IframePdfReader url={selectedMagUrl} />
-        </div>
-      )}
     </>
   );
 }
