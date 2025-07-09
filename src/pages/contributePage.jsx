@@ -16,7 +16,9 @@ class ContributePage extends Component {
         <div className="contheader">
           <h3>Contribution Form</h3>
         </div>
-        <ContributeForm />
+        <div className="contform">
+          <ContributeForm />
+        </div>
       </>
     );
   }

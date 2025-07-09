@@ -107,7 +107,7 @@
 }
 
 /* Show the toggle label on small screens */
-@media (max-width: 600px) {
+@media (max-width: 1094px) {
   .navbar-toggle-label {
     display: flex;
     flex-direction: column;
@@ -184,7 +184,7 @@
   transform: none;
 }
 /* Responsive styles */
-@media (max-width: 600px) {
+@media (max-width: 1094px) {
   .navbar {
     flex-wrap: nowrap;
     position: relative;

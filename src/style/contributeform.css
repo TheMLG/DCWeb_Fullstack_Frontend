@@ -57,6 +57,8 @@
 }
 @media screen and (min-width: 600px) {
   .cont-form-container {
-    margin: 1rem 32rem;
+    margin: 1rem 7rem;
+    max-width: 32rem;
+    padding: 1rem 4rem;
   }
 }
